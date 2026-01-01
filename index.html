@@ -3,141 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajaji's Portfolio</title>
+  <title>Rajaji V | Full Stack Developer</title>
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
   <header class="header">
-    <a href="#" class="logo">Rajaji V</a>
+    <a href="#" class="logo">Rajaji<span class="accent">.dev</span></a>
     <nav class="nav">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#about" class="nav-link"><span>01.</span> About</a>
+      <a href="#skills" class="nav-link"><span>02.</span> Skills</a>
+      <a href="#experience" class="nav-link"><span>03.</span> Experience</a>
+      <a href="#projects" class="nav-link"><span>04.</span> Projects</a>
+      <a href="#contact" class="nav-link"><span>05.</span> Contact</a>
     </nav>
     <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Hi, I'm Rajaji</h1>
-        <p class="hero-subtitle">Aspiring Full Stack Developer</p>
-        <a href="#about" class="cta-btn">Explore More</a>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-title glitch" data-text="Rajaji V">Rajaji V</h1>
+        <h2 class="hero-subtitle">Aspiring <span class="txt-rotate" data-period="2000" data-rotate='[ "Full Stack Developer", "Software Engineer", "Problem Solver" ]'></span></h2>
+        <p class="hero-desc">
+          Building efficient and scalable applications with a passion for AI/ML and Data Science.
+        </p>
+        <div class="cta-group">
+          <a href="#projects" class="cta-btn primary">View Work</a>
+          <a href="#contact" class="cta-btn secondary">Contact Me</a>
+        </div>
       </div>
-      <img src="images/1000037068.jpg" alt="Rajaji" class="profile-img" />
-    </section>
-
-    <section id="about" class="card about-section">
-      <h2>About Me</h2>
-      <p>Aspiring software engineer with strong computer science fundamentals, specializing in Python, C, and C++ for building efficient and scalable applications. Skilled in data structures, algorithms, and full-stack development, and eager to join a growth-driven organization where I can expand my technical expertise while contributing to impactful and innovative software projects.</p>
-    </section>
-
-    <div class="two-column-section">
-      <section id="education" class="card education-section">
-        <h2>Education</h2>
-        <ul>
-          <li><b>B.Tech in Artificial Intelligence and Data Science</b> — Kalaignarkarunanidhi Institute of Technology, Coimbatore (2023–2027) — CGPA: 7.93</li>
-          <li>Coursework: C, C++, Python, DSA, DBMS, Introduction to ML and Data Science.</li>
-        </ul>
-      </section>
-
-      <section id="profiles" class="card profiles-section">
-        <h2>Online Profiles</h2>
-        <div class="profile-links">
-          <a href="https://www.linkedin.com/in/rajaji-v-1276312a5" target="_blank" class="profile-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/Rajaji-V/" target="_blank" class="profile-link"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.codechef.com/users/rajaji23bad044" target="_blank" class="profile-link"><i class="fas fa-code"></i> CodeChef</a>
-          <a href="https://leetcode.com/u/Rajaji_V/" target="_blank" class="profile-link"><i class="fas fa-laptop-code"></i> Leetcode</a>
-          <a href="https://www.geeksforgeeks.org/user/kit27a9bct/" target="_blank" class="profile-link"><i class="fas fa-laptop-code"></i> GFG</a>
-          <a href="https://www.hackerrank.com/profile/Kit27_ad044" target="_blank" class="profile-link"><i class="fab fa-hackerrank"></i> Hackerrank</a>
-        </div>
-      </section>
-    </div>
-
-    <section id="skills" class="card skills-section">
-      <h2>Programming & Soft Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Programming Languages: Python, C++, C</li>
-            <li>AI/ML & Data Science: TensorFlow, NLP, Computer Vision, Pandas, NumPy, Scikit-learn</li>
-            <li>Full-Stack Development: HTML, CSS, Javascript, React.js, Node.js, Express.js, MongoDB</li>
-            <li>DSA: Core data structures, Algorithmic Techniques, Time-Space optimization, and Problem Solving</li>
-            <li>Database: MySQL, MongoDB</li>
-            <li>Core Concepts: OOPs, DBMS, Computer Networks, Operating System</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Problem Solving</li>
-            <li>Time Management</li>
-            <li>Team Collaboration</li>
-            <li>Communication</li>
-          </ul>
+      <div class="hero-visual">
+        <div class="profile-frame">
+          <img src="images/1000037068.jpg" alt="Rajaji" class="profile-img" />
+          <div class="frame-decoration"></div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="card experience-section">
-      <h2>Experience</h2>
-      <div class="experience-list">
-        <div class="experience-item">
-          <h4>Inplant Training - NXTLOGIC SOLUTION</h4>
-          <p>Data Analysis with Python (10 days)</p>
+    <section id="about" class="section about-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text glass-card">
+          <p>
+            I am an aspiring software engineer studying <strong>Artificial Intelligence and Data Science</strong> at Kalaignarkarunanidhi Institute of Technology. 
+            My journey involves mastering <strong>Python, C, and C++</strong> to build efficient algorithms and scalable systems.
+          </p>
+          <p>
+            With a strong foundation in <strong>Data Structures and Algorithms</strong>, I am eager to contribute to innovative projects in a growth-driven environment.
+          </p>
         </div>
-        <div class="experience-item">
-          <h4>Hackathon Participant</h4>
-          <p>Participated in 2x Hackathons (24-hr, LearnLogicify)</p>
-        </div>
-        <div class="experience-item">
-          <h4>Internship</h4>
-          <p>Fullstack internship at LearnLogicify (30 days)</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="card projects-section">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project-item">
-          <h4>DriverConnect - MERN Full-Stack Platform</h4>
-          <p>A full-stack platform enabling vehicle owners to hire drivers, built using MongoDB, Express, React, and Node.js with secure authentication and smooth hiring workflows. (<a href="https://driver-connect.vercel.app/" target="_blank">Vercel</a>)</p>
-        </div>
-        <div class="project-item">
-          <h4>DryFruits E-Commerce Website</h4>
-          <p>Responsive online shopping site with product listings, cart, and checkout using HTML, CSS, and JavaScript. (<a href="https://rajaji-v.github.io/Dry_Fruits_website/" target="_blank">GitHub</a>)</p>
-        </div>
-        <div class="project-item">
-          <h4>TO-DO List Application</h4>
-          <p>Simple task manager allowing users to add, edit, and delete tasks using HTML, CSS, and JavaScript. (<a href="https://rajaji-v.github.io/TO-DO-List/" target="_blank">GitHub</a>)</p>
+        <div class="education-card glass-card">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="edu-item">
+            <h4>B.Tech in Artificial Intelligence & Data Science</h4>
+            <span class="institution">Kalaignarkarunanidhi Institute of Technology</span>
+            <span class="year">2023 – 2027</span>
+            <span class="grade">CGPA: 7.93</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="card contact-section">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-phone"></i> <span>9600384924</span></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:kit27.ad044@gmail.com">kit27.ad044@gmail.com</a></p>
+    <section id="skills" class="section skills-section">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-container">
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>C++</span>
+            <span>C</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-layer-group"></i> Full Stack</h3>
+          <div class="skill-tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
+          <div class="skill-tags">
+            <span>TensorFlow</span>
+            <span>NLP</span>
+            <span>Computer Vision</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-tools"></i> Core & Soft Skills</h3>
+          <div class="skill-tags">
+            <span>DSA</span>
+            <span>OOPs</span>
+            <span>DBMS</span>
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+          </div>
+        </div>
       </div>
-      <a class="resume-btn" href="assets/Rajaji Resume (1).pdf" download><i class="fas fa-download"></i> Download Resume</a>
+    </section>
+
+    <section id="experience" class="section experience-section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content glass-card">
+            <span class="date">30 Days</span>
+            <h3>Fullstack Internship</h3>
+            <span class="company">LearnLogicify</span>
+            <p>Gained hands-on experience in full-stack development practices.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content glass-card">
+            <span class="date">2024</span>
+            <h3>Hackathon Participant</h3>
+            <span class="company">24-hr Hackathons</span>
+            <p>Participated in intensive coding challenges to solve real-world problems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content glass-card">
+            <span class="date">10 Days</span>
+            <h3>Inplant Training</h3>
+            <span class="company">NXTLOGIC SOLUTION</span>
+            <p>Data Analysis with Python, learning data processing techniques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <h3>DriverConnect</h3>
+            <p class="project-tech">MERN Stack</p>
+            <p>A full-stack platform enabling vehicle owners to hire drivers with secure authentication and smooth workflows.</p>
+            <div class="project-links">
+              <a href="https://driver-connect.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <h3>DryFruits E-Commerce</h3>
+            <p class="project-tech">HTML, CSS, JS</p>
+            <p>Responsive online shopping site with product listings, cart, and checkout functionalities.</p>
+            <div class="project-links">
+              <a href="https://rajaji-v.github.io/Dry_Fruits_website/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-content">
+            <h3>TO-DO List</h3>
+            <p class="project-tech">HTML, CSS, JS</p>
+            <p>Simple task manager allowing users to add, edit, and delete tasks efficiently.</p>
+            <div class="project-links">
+              <a href="https://rajaji-v.github.io/TO-DO-List/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profiles" class="section profiles-section">
+       <h2 class="section-title">Connect Everywhere</h2>
+       <div class="social-links">
+          <a href="https://www.linkedin.com/in/rajaji-v-1276312a5" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Rajaji-V/" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://www.codechef.com/users/rajaji23bad044" target="_blank" class="social-btn"><i class="fas fa-code"></i></a>
+          <a href="https://leetcode.com/u/Rajaji_V/" target="_blank" class="social-btn"><i class="fas fa-laptop-code"></i></a>
+          <a href="https://www.geeksforgeeks.org/user/kit27a9bct/" target="_blank" class="social-btn"><i class="fas fa-terminal"></i></a>
+       </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="glass-card contact-box">
+        <h2>Get In Touch</h2>
+        <p>Currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <a href="mailto:kit27.ad044@gmail.com" class="cta-btn primary">Say Hello</a>
+        <div class="contact-details">
+          <p><i class="fas fa-phone"></i> 9600384924</p>
+          <a class="resume-link" href="assets/Rajaji Resume (1).pdf" download>Download Resume</a>
+        </div>
+      </div>
     </section>
   </main>
-  
+
   <footer class="footer">
-    <p>&copy; 2025 Rajaji V. All Rights Reserved.</p>
+    <p>Designed & Built by Rajaji V</p>
+    <p>&copy; 2025 All Rights Reserved.</p>
   </footer>
 
   <script src="scripts/script.js"></script>
